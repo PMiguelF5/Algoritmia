@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <script>
+    <script> 
 
         let sun = prompt('Está sol?')
 
