@@ -1,86 +1,131 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FICHA01</title>
 </head>
 
 <body>
     <script>
-        //exercicio 1
-        console.log("Olá JavaScript!");
+        // 1ºexercício
+        console.log('Olá mundo!');
 
-        //exercicio 2 a
+        // 2ºexercicio
         let admin, name
-        name = "John"
+        name = 'John'
         admin = name
-
         console.log(admin);
 
-        //exercicio 2 b
-        let planetname = "terra"
-        let currentvisitorname
+        let planetName = 'terra'
+        let currentVisitorName
 
-        //exercicio 3  
-        const BIRTHDAY = "5_9_2002"
+        // 3ºexercicio
+        const BIRTHDAY = '18-04-1982'
 
-        //exercicio 4
-        name = "Ilya"
-        console.log(`Hello $(1)`);
-        console.log(`Hello $("Name")`);
-        console.log(`Hello $(Name)`);
+        // 4º exercício
+        name = 'Ilya'
+        console.log(`hello ${1}`);
+        console.log(`hello ${"name"}`);
+        console.log(`hello ${name}`);
 
-        //exercicio 5
-        console.log("" + 1 + 0);
-        console.log("" - 1 + 0);
-        console.log(true + false);
-        console.log(6 / "3");
-        console.log("2" * "3");
-        console.log(4 + 5 + "px");
-        console.log("$" + 4 + 5);
-        console.log("4" - 2);
-        console.log("4px" - 2);
-        console.log(7 / 0);
-        console.log(" -9 " + 5);
-        console.log(" -9 " - 5);
-        console.log(null + 1);
-        console.log(undefined + 1);
+        // 5º exercicio
+        console.log('' + 1 + 0)
+        console.log('' - 1 + 0)
+        console.log(true + false)
+        console.log(6 / "3")
+        console.log("2" * "3")
 
-        //exercicio 6a
+        console.log(4 + 5 + "px")
+        console.log("$" + 4 + 5)
+        console.log("4" - 2)
+        console.log("4px" - 2)
+        console.log(7 / 0)
+        console.log(" -9 " + 5)
+        console.log(" -9 " - 5)
+        console.log(null + 1)
+        console.log(undefined + 1)
+
+        // Exercício 6
         let a = 1, b = 1;
-        let c = ++a; 
-        let d = b++;
-        console.log(a,b,c,d);
+        let c = ++a; // 2
+        let d = b++; // 1
 
-        // exercicio 6b
-        let z = 2;
-        let x = 1 + (a *= 2);
-        console.log(z,x);
-        
-        // exercicio 7
-        name = prompt("nome")
-        console.log(`*** $[name] ***`);
+        console.log(c);
+        console.log(d);
 
-        //exercicio 8
-        console.log(5 > 4);
-        console.log("apple" > "pineapple");
-        console.log("2" > "12");
-        console.log(undefined == null);
-        console.log(undefined === null);
-        console.log(null == "\n0\n");
-        console.log(null === +"\n0\n");  
-        
-        //exercicio 9a
-        if ("0") {
-alert( 'Hello' );
-}
+        // Exercício 7
+        name = prompt('Como te chamas?')
+        console.log(`*** ${name} ***`);
 
+        // Exercicio 8
+        console.log(5 > 4)
+        console.log("apple" > "pineapple")
+        console.log("2" > "12")
+        console.log(undefined == null)
+        console.log(undefined === null)
 
+        // Exercício 9
+        if ('0') {
+            // alert('Hello');
+        }
 
+        /* let question = prompt('What’s the "official" name of Javascript?')
+        if (question == 'ECMAScript') {
+            alert('Right!')
+        } else {
+            alert('You don’t know? "ECMAScript"!')
+        } */
 
+        /* let number = +prompt('digite um número?')
+        if (number > 0) {
+            console.log(1);
+        } else if (number < 0) {
+            console.log(-1);
+        } else {
+            console.log(0);
+        } */
 
+        // Exercício 10
+        /* alert(null || 2 || undefined);
+        alert(alert(1) || 2 || alert(3));
+        alert(1 && null && 2);
+        alert(alert(1) && alert(2));
+        alert(null || 2 && 3 || 4); */
+
+        // Exercício 11
+        /* let i = 3;
+        while (i) {
+            alert(i--);
+        } */
+
+        // alinea d
+      /*   for (let i = 0; i <= 10; i++) {
+            if (i % 2 == 1) {
+                console.log(i);
+            }
+        } */
+
+        //pedir 1 numero ao utilizador e somar todos os seus descendentes
+
+       /*  let number = +prompt('digite um numero?')
+        let sum = 0
+        for (let i = 0; i <= number; i++) {
+            sum = sum + i
+        }
+        console.log(sum); */
+
+        let sum = 0
+        while (true) {
+            let number = +prompt('Digite um número?')
+            if (number != 0) {
+                sum = sum + number
+            } else {
+                break
+            }
+        }
+
+        console.log(sum);
 
 
 
